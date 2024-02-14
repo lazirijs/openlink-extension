@@ -1,0 +1,25 @@
+{
+    "manifest_version": 3,
+    "name": "Open Link",
+    "version": "1.0",
+    "description": "",
+    "content_scripts": [
+        {
+            "js": [
+                "main.js"
+            ],
+            "matches": [
+                "https://remote.bmlabserver.com/*",
+                "http://remote.bmlabserver.com/*",
+                "http://192.168.1.245:96/*"
+            ],
+            "run_at": "document_end"
+        }
+    ],
+    "icons": {
+        "16": "icon/open-link.png",
+        "32": "icon/open-link.png",
+        "48": "icon/open-link.png",
+        "128": "icon/open-link.png"
+    }
+}
