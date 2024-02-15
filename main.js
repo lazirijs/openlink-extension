@@ -48,10 +48,10 @@ const editeOnDOM = () => {
       if (number.length >= 9) {
         if (number.startsWith("0") || number.startsWith("+")) {
           return ` ${number} 
-          <a href="tel:${number}" style="text-decoration: none; font-weight: 900; color: blue;">${character}</a> 
-          <a href="whatsapp://send?phone=${(number.startsWith("0") ? "+213" : "+212") + Number(number)}" style="text-decoration: none; font-weight: 900; color: green;">${character}</a>`;
+          <a title="3CX" href="tel:${number}" style="text-decoration: none; font-weight: 900; color: blue;">${character}</a> 
+          <a title="Whatsapp" href="whatsapp://send?phone=${(number.startsWith("0") ? "+213" : "+212") + Number(number)}" style="text-decoration: none; font-weight: 900; color: green;">${character}</a>`;
         } else {
-          return ` ${number} <a href="anydesk:${number}" style="text-decoration: none; font-weight: 900; color: red;">${character}</a>`;
+          return ` ${number} <a title="Anydesk" href="anydesk:${number}" style="text-decoration: none; font-weight: 900; color: red;">${character}</a>`;
         }
       } else {
         return number;
